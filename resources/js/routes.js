@@ -2,8 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
-import Administration from './components/Home'
-import Accounting from './components/Hello'
+import Administration from './components/Administration'
+import Accounting from './components/Accounting'
 import CadDesign1 from './components/Purchasing'
 import CadDesign2 from './components/Purchasing'
 import Denki from './components/Purchasing'

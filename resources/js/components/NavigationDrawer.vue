@@ -2,7 +2,7 @@
     <div>
             <v-app-bar dense app  clipped-left>
                     <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-                        <v-toolbar-title>System Management System</v-toolbar-title>
+                        <v-toolbar-title>HRD System Management System</v-toolbar-title>
             </v-app-bar>
 
 
@@ -12,10 +12,10 @@
                                         v-for="(item, index) in Departments" 
                                         :key="index" 
                                         :to="item.router">
-                                    
+<!--                                     
                                             <v-list-item-icon>
                                                     <v-icon>{{item.icon}}</v-icon>
-                                            </v-list-item-icon>
+                                            </v-list-item-icon> -->
 
                                             <v-list-item-title>{{item.title}}</v-list-item-title>
                                           
@@ -35,18 +35,19 @@ export default {
         return{
             drawer:true, 
             Departments:[
-                {
-                    title:'Administration',
-                    icon:'mdi-account' , 
-                    router:'/'
-                },
-                
+               
                  {
                     title:'Accounting',
                     icon:'mdi-cog' , 
                     router:'/Accounting'
                 },
-
+                
+                 {
+                    title:'Administration',
+                    icon:'mdi-account' , 
+                    router:'/'
+                },
+                
 
                 {
                     title:'Cad Design 1',
@@ -99,6 +100,85 @@ export default {
                     icon:'mdi-trash-can',
                     router:'/Hacchu'
                 },
+                 {
+                    title:'House Presentation',
+                    icon:'mdi-trash-can',
+                    router:'/HousePresentation'
+                }, 
+                {
+                    title:'IQA',
+                    icon:'mdi-trash-can',
+                    router:'/IQA'
+                },
+                 {
+                    title:'Logistics',
+                    icon:'mdi-trash-can',
+                    router:'/Logistics'
+                }, 
+                {
+                    title:'Original Hiroi',
+                    icon:'mdi-trash-can',
+                    router:'/OriginalHiroi'
+                },
+                  {
+                    title:'Panel Assembly',
+                    icon:'mdi-trash-can',
+                    router:'/PanelAssembly'
+                }, 
+                {
+                    title:'Piping',
+                    icon:'mdi-trash-can',
+                    router:'/Piping'
+                },
+           
+
+             {
+                    title:'Plan Application',
+                    icon:'mdi-trash-can',
+                    router:'/PlanApplication'
+                }, 
+                {
+                    title:'QA',
+                    icon:'mdi-trash-can',
+                    router:'/QA'
+                },
+                  {
+                    title:'R&D',
+                    icon:'mdi-trash-can',
+                    router:'/R&D'
+                }, 
+                {
+                    title:'Security',
+                    icon:'mdi-trash-can',
+                    router:'/Security'
+                },
+                   {
+                    title:'Structural Calculation 1',
+                    icon:'mdi-trash-can',
+                    router:'/StructuralCalculation1'
+                }, 
+                {
+                  title:'Structural Calculation 2',
+                    icon:'mdi-trash-can',
+                    router:'/StructuralCalculation2'
+                },
+                  {
+                  title:'Structural Panel',
+                    icon:'mdi-trash-can',
+                    router:'/StructuralCalculation2'
+                },
+
+                  {
+                  title:'Technical and Support',
+                    icon:'mdi-trash-can',
+                    router:'/TechnicalAndSupport'
+                },
+                  {
+                  title:'Unit Wiring',
+                    icon:'mdi-trash-can',
+                    router:'/UnitWiring'
+                },
+
 
                 ]
         }
