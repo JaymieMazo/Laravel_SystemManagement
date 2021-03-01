@@ -5,7 +5,7 @@ Vue.use(VueRouter)
 import Administration from './components/Home'
 import Accounting from './components/Hello'
 import Purchasing from './components/Purchasing'
-
+ 
 
 export default new VueRouter({
     mode: 'history',
@@ -15,13 +15,11 @@ export default new VueRouter({
             name: 'Administration',
             component: Administration
         },
-
         {
             path: '/Accounting',
             name: 'Accounting',
             component: Accounting
         },
-
         {
             path: '/Purchasing', 
             name:'Purchasing', 
