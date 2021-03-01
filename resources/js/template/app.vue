@@ -9,7 +9,7 @@
                 </div>
             </v-main>
       </div>
-      
+
    </v-app>
 </template>
 
@@ -20,7 +20,6 @@
     import  NavDrawer from '../components/NavigationDrawer';
 
     export default {
-        components:{NavDrawer}
-
+        components:{ NavDrawer}
     }
 </script>

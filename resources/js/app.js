@@ -12,6 +12,7 @@ import Vuetify from 'vuetify'
 import Routes from './routes'
 import store from './store'
 import App from './template/App';
+
 Vue.use(Vuetify)
 /**
  * The following block of code may be used to automatically register your
