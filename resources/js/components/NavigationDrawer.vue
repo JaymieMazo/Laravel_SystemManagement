@@ -8,7 +8,7 @@
 
             <v-navigation-drawer clipped app  v-model="drawer">
                     <v-list>    
-                                   <v-list-item    
+                                   <v-list-item     class="route1" 
                                         v-for="(item, index) in Departments" 
                                         :key="index" 
                                         :to="item.router">
@@ -49,16 +49,56 @@ export default {
 
 
                 {
-                    title:'Purchasing',
+                    title:'Cad Design 1',
                     icon:'mdi-trash-can',
-                    router:'/Purchasing'
+                    router:'/CadDesign1'
                 }, 
 
-                        {
-                    title:'test',
+                {
+                   title:'Cad Design 2',
                     icon:'mdi-trash-can',
-                    router:'/test'
+                    router:'/CadDesign2'
                 }, 
+                 {
+                    title:'Denki',
+                    icon:'mdi-trash-can',
+                    router:'/Denki'
+                }, 
+                {
+                    title:'Engineering',
+                    icon:'mdi-trash-can',
+                    router:'/Engineering'
+                },   
+                {
+                    title:'Estimation',
+                    icon:'mdi-trash-can',
+                    router:'/Estimation'
+                }, 
+                {
+                    title:'Exterior',
+                    icon:'mdi-trash-can',
+                    router:'/Exterior'
+                }, 
+                {
+                    title:'Frame',
+                    icon:'mdi-trash-can',
+                    router:'/Frame'
+                }, 
+                {
+                    title:'FSE',
+                    icon:'mdi-trash-can',
+                    router:'/FSE'
+                }, 
+                 {
+                    title:'GPC',
+                    icon:'mdi-trash-can',
+                    router:'/GPC'
+                }, 
+                {
+                    title:'Hacchu',
+                    icon:'mdi-trash-can',
+                    router:'/Hacchu'
+                },
 
                 ]
         }
@@ -68,3 +108,15 @@ export default {
 </script>
 
 
+<style scoped>
+
+.route1{
+text-decoration: none;
+}
+
+.route1:hover{
+background-color: darkgrey;}
+
+.route1:active{
+background-color:teal;}
+</style>
