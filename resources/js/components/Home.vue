@@ -1,10 +1,11 @@
 <template>
-<div   >
-    <v-list-item-group >
-    
-    <v-list-item   class="system" v-for="(item , key) in Accounting " :key="key"  >
 
-    <v-list-item-title>{{item.name}}</v-list-item-title>
+<div   >
+
+    <v-list-item-group >
+    <v-list-item  @click="test()" class="system" v-for="(item , key) in departments " :key="key"  >
+
+    <v-list-item-title>{{item.department_name}}</v-list-item-title>
     </v-list-item>
     </v-list-item-group>
 </div>
@@ -13,7 +14,6 @@
 
 <script>
 export default {
-
     data(){
         return{
                 Accounting:[
@@ -36,9 +36,14 @@ export default {
                     {name:'HRD Broking'},
                     {name:'HRD Umbrella Administration System'},
                      {name:'HRD Warehouse Management System'},
+                     {name:'Petty Cash System'},
+                    {name:'PRS System'},
                     
                     
-                    ]
+                    ],
+
+                    departments:[],
+
         }
     }, 
 
@@ -46,7 +51,24 @@ export default {
 
 
     created(){
-            
+            axios.get('api/home').then(res=>{
+                this.departments=res.data
+                console.log(res.data)
+            })
+    }
+    ,
+
+
+
+
+    methods:{
+        test(){
+            // var child_process = require('child_process');
+
+            // child_process.exec('\\hrdapps2\access$\Deployment\BatchFile\PRS.bat', function(error, stdout, stderr) {
+            // console.log(stdout);
+
+        }
     }
 
 }

@@ -2,8 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
+import Accounting from './components/Home'
 import Administration from './components/Administration'
-import Accounting from './components/Accounting'
 import CadDesign1 from './components/Purchasing'
 import CadDesign2 from './components/Purchasing'
 import Denki from './components/Purchasing'
@@ -22,14 +22,16 @@ export default new VueRouter({
     routes: [
         {
             path: '/',
-            name: 'Administration',
-            component: Administration
-        },
-        {
-            path: '/Accounting',
             name: 'Accounting',
             component: Accounting
         },
+        
+        {
+            path: '/Administration',
+            name: 'Administration',
+            component: Administration
+        },
+       
 
         {
             path: '/CadDesign1', 
